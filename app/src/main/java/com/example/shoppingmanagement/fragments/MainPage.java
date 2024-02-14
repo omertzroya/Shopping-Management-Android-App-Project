@@ -120,10 +120,11 @@ public class MainPage extends Fragment {
                            String productName = productNameEditText.getText().toString();
                            double productPrice = Double.parseDouble(productPriceEditText.getText().toString());
 
-                           // Add the new product to the dataset
-                           products.add(new Product(productName, productPrice));
-                           // Notify the adapter about the change
-                           adapter.notifyItemInserted(products.size() - 1);
+                               // Add the new product to the dataset
+                               products.add(new Product(productName, productPrice));
+                               // Notify the adapter about the change
+                               adapter.notifyItemInserted(products.size() - 1);
+
                        }
                    });
 
